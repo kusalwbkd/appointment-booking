@@ -1,7 +1,7 @@
 import { gql, GraphQLClient } from "graphql-request";
-import { NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 
-export async function DELETE(req:NextResponse) {
+export async function DELETE(req:NextRequest) {
     const MASTER_URL = "https://ap-south-1.cdn.hygraph.com/content/cm9jlxiqt033v07waitosen26/master";
 
     try {
